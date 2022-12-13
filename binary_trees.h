@@ -28,7 +28,7 @@ typedef struct binary_tree_s avl_t;
 typedef struct binary_tree_s heap_t;
 
 /* print function */
-void binary _tree_print(const binary_tree_t *tree);
+void binary_tree_print(const binary_tree_t *tree);
 
 /* binary tree node func */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
