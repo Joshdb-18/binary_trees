@@ -45,5 +45,8 @@ void binary_tree_delete(binary_tree_t *tree);
 /* binary tree is leaf func */
 int binary_tree_is_leaf(const binary_tree_t *node);
 
+/* binary tree is root func */
+int binary_tree_is_root(const binary_tree_t *node);
+
 #endif /* _BINARY_TREES_H_ */
 
