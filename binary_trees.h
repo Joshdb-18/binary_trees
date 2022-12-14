@@ -42,5 +42,8 @@ binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
 /* binary tree delete func */
 void binary_tree_delete(binary_tree_t *tree);
 
+/* binary tree is leaf func */
+int binary_tree_is_leaf(const binary_tree_t *node);
+
 #endif /* _BINARY_TREES_H_ */
 
