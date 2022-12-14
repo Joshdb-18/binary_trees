@@ -63,11 +63,14 @@ size_t binary_tree_height(const binary_tree_t *tree);
 /* binary tree depth func */
 size_t binary_tree_depth(const binary_tree_t *tree);
 
-/* binary tree size */
+/* binary tree size func */
 size_t binary_tree_size(const binary_tree_t *tree);
 
-/* binary tree leaves */
+/* binary tree leaves func */
 size_t binary_tree_leaves(const binary_tree_t *tree);
+
+/* binary tree nodes func */
+size_t binary_tree_nodes(const binary_tree_t *tree);
 
 #endif /* _BINARY_TREES_H_ */
 
