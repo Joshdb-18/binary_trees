@@ -106,6 +106,9 @@ binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
 /* binary tree is bst function */
 int binary_tree_is_bst(const binary_tree_t *tree);
 
+/* binary tree bst insert function */
+bst_t *bst_insert(bst_t **tree, int value);
+
 /* helper functions */
 void binary_tree_levelorder_helper(const binary_tree_t *tree,
 				void (*func)(int), size_t level);
