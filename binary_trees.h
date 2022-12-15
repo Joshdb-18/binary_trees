@@ -109,6 +109,9 @@ int binary_tree_is_bst(const binary_tree_t *tree);
 /* binary tree bst insert function */
 bst_t *bst_insert(bst_t **tree, int value);
 
+/* array to bst function */
+bst_t *array_to_bst(int *array, size_t size);
+
 /* helper functions */
 void binary_tree_levelorder_helper(const binary_tree_t *tree,
 				void (*func)(int), size_t level);
