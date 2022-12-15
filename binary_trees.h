@@ -118,12 +118,16 @@ bst_t *bst_search(const bst_t *tree, int value);
 /* bst remove function */
 bst_t *bst_remove(bst_t *root, int value);
 
+/* binary tree is avl function */
+int binary_tree_is_avl(const binary_tree_t *tree);
+
 /* helper functions */
 void binary_tree_levelorder_helper(const binary_tree_t *tree,
 				void (*func)(int), size_t level);
 int binary_tree_is_complete_helper(const binary_tree_t *tree,
 					size_t index, size_t size);
 int binary_tree_is_bst_helper(const binary_tree_t *tree, int min, int max);
+int binary_tree_is_avl_helper(const binary_tree_t *tree, int min, int max);
 
 #endif /* _BINARY_TREES_H_ */
 
