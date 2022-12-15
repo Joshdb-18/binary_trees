@@ -112,6 +112,9 @@ bst_t *bst_insert(bst_t **tree, int value);
 /* array to bst function */
 bst_t *array_to_bst(int *array, size_t size);
 
+/* bst search function */
+bst_t *bst_search(const bst_t *tree, int value);
+
 /* helper functions */
 void binary_tree_levelorder_helper(const binary_tree_t *tree,
 				void (*func)(int), size_t level);
