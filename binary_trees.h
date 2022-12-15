@@ -121,6 +121,9 @@ bst_t *bst_remove(bst_t *root, int value);
 /* binary tree is avl function */
 int binary_tree_is_avl(const binary_tree_t *tree);
 
+/* avl insert function */
+avl_t *avl_insert(avl_t **tree, int value);
+
 /* helper functions */
 void binary_tree_levelorder_helper(const binary_tree_t *tree,
 				void (*func)(int), size_t level);
