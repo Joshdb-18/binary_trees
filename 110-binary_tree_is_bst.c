@@ -35,3 +35,4 @@ int binary_tree_is_bst_helper(const binary_tree_t *tree, int min, int max)
 		binary_tree_is_bst_helper(tree->right,
 		tree->n + 1, max));
 }
+
