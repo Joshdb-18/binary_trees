@@ -124,6 +124,9 @@ int binary_tree_is_avl(const binary_tree_t *tree);
 /* avl insert function */
 avl_t *avl_insert(avl_t **tree, int value);
 
+/* array to avl function */
+avl_t *array_to_avl(int *array, size_t size);
+
 /* helper functions */
 void binary_tree_levelorder_helper(const binary_tree_t *tree,
 				void (*func)(int), size_t level);
@@ -131,6 +134,9 @@ int binary_tree_is_complete_helper(const binary_tree_t *tree,
 					size_t index, size_t size);
 int binary_tree_is_bst_helper(const binary_tree_t *tree, int min, int max);
 int binary_tree_is_avl_helper(const binary_tree_t *tree, int min, int max);
+avl_t *avl_insert_recursive(avl_t **tree, avl_t *parent, avl_t **new, int value);
+int balance(const binary_tree_t *tree);
+size_t height(const binary_tree_t *tree);
 
 #endif /* _BINARY_TREES_H_ */
 
