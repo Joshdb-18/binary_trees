@@ -99,6 +99,9 @@ int binary_tree_is_complete(const binary_tree_t *tree);
 /* binary tree rotate left function */
 binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);
 
+/* binary tree rotate right function */
+binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
+
 /* helper functions */
 void binary_tree_levelorder_helper(const binary_tree_t *tree, void (*func)(int), size_t level);
 int binary_tree_is_complete_helper(const binary_tree_t *tree, size_t index, size_t size);
