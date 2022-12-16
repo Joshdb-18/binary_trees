@@ -130,6 +130,9 @@ avl_t *array_to_avl(int *array, size_t size);
 /* avl remove function */
 avl_t *avl_remove(avl_t *root, int value);
 
+/* sorted array to avl func */
+avl_t *sorted_array_to_avl(int *array, size_t size);
+
 /* helper functions */
 void binary_tree_levelorder_helper(const binary_tree_t *tree,
 				void (*func)(int), size_t level);
@@ -142,5 +145,7 @@ void bal(avl_t **tree);
 int successor(bst_t *node);
 int remove_type(bst_t *root);
 bst_t *bst_remove(bst_t *root, int value);
+avl_t *aux_sort(avl_t *parent, int *array, int begin, int last);
+
 #endif /* _BINARY_TREES_H_ */
 
