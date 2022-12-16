@@ -138,6 +138,9 @@ int binary_tree_is_complete_helper(const binary_tree_t *tree,
 int binary_tree_is_bst_helper(const binary_tree_t *tree, int min, int max);
 int binary_tree_is_avl_helper(const binary_tree_t *tree, int min, int max);
 avl_t *r_insert_node(avl_t **tree, avl_t *parent, avl_t **new, int nval);
-
+void bal(avl_t **tree);
+int successor(bst_t *node);
+int remove_type(bst_t *root);
+bst_t *bst_remove(bst_t *root, int value);
 #endif /* _BINARY_TREES_H_ */
 
