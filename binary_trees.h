@@ -127,6 +127,9 @@ avl_t *avl_insert(avl_t **tree, int value);
 /* array to avl function */
 avl_t *array_to_avl(int *array, size_t size);
 
+/* avl remove function */
+avl_t *avl_remove(avl_t *root, int value);
+
 /* helper functions */
 void binary_tree_levelorder_helper(const binary_tree_t *tree,
 				void (*func)(int), size_t level);
