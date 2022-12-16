@@ -146,6 +146,7 @@ int successor(bst_t *node);
 int remove_type(bst_t *root);
 bst_t *bst_remove(bst_t *root, int value);
 avl_t *aux_sort(avl_t *parent, int *array, int begin, int last);
+int binary_tree_is_heap(const binary_tree_t *tree);
 
 #endif /* _BINARY_TREES_H_ */
 
