@@ -162,7 +162,6 @@ int binary_tree_is_heap(const binary_tree_t *tree);
 int btih_helper(const binary_tree_t *tree);
 void recurse_extract(heap_t *tree);
 heap_t *last_node_heap(const heap_t *tree, size_t level);
-void heapify(heap_t *tree);
 size_t heap_tree_size(const binary_tree_t *tree);
 #endif /* _BINARY_TREES_H_ */
 
