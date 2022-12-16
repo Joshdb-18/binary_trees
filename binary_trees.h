@@ -133,6 +133,9 @@ avl_t *avl_remove(avl_t *root, int value);
 /* sorted array to avl func */
 avl_t *sorted_array_to_avl(int *array, size_t size);
 
+/* heap insert func */
+heap_t *heap_insert(heap_t **root, int value);
+
 /* helper functions */
 void binary_tree_levelorder_helper(const binary_tree_t *tree,
 				void (*func)(int), size_t level);
