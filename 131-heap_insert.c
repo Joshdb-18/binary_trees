@@ -50,7 +50,8 @@ heap_t *heap_insert(heap_t **root, int value)
 	/* Flip values with parent until parent value exceeds new value */
 
 	return (new);
-}/**
+}
+/**
  * binary_tree_size - measures the size of a binary tree
  * @tree: tree to measure the size of
  *
