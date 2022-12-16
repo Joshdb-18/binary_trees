@@ -136,6 +136,9 @@ avl_t *sorted_array_to_avl(int *array, size_t size);
 /* heap insert func */
 heap_t *heap_insert(heap_t **root, int value);
 
+/* array to heap func */
+heap_t *array_to_heap(int *array, size_t size);
+
 /* helper functions */
 void binary_tree_levelorder_helper(const binary_tree_t *tree,
 				void (*func)(int), size_t level);
