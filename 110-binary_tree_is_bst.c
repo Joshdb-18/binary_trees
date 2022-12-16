@@ -15,7 +15,7 @@ int binary_tree_is_bst(const binary_tree_t *tree)
 }
 
 /**
- * binary_tree_is_bst_helper: helper func for bst
+ * binary_tree_is_bst_helper - helper func for bst
  * @tree: pointer to the root node of the tree to check
  * @min: lower boiund of checked nodes
  * @max: upper bound of checked nodes
