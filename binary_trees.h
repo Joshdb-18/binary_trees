@@ -134,9 +134,6 @@ int binary_tree_is_complete_helper(const binary_tree_t *tree,
 					size_t index, size_t size);
 int binary_tree_is_bst_helper(const binary_tree_t *tree, int min, int max);
 int binary_tree_is_avl_helper(const binary_tree_t *tree, int min, int max);
-avl_t *avl_insert_recursive(avl_t **tree, avl_t *parent, avl_t **new, int value);
-int balance(const binary_tree_t *tree);
-size_t height(const binary_tree_t *tree);
 
 #endif /* _BINARY_TREES_H_ */
 
