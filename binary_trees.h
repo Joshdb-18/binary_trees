@@ -142,6 +142,9 @@ heap_t *array_to_heap(int *array, size_t size);
 /* heap extract func */
 int heap_extract(heap_t **root);
 
+/* heap to sorted array */
+int *heap_to_sorted_array(heap_t *heap, size_t *size);
+
 /* helper functions */
 void binary_tree_levelorder_helper(const binary_tree_t *tree,
 				void (*func)(int), size_t level);
@@ -158,8 +161,8 @@ avl_t *aux_sort(avl_t *parent, int *array, int begin, int last);
 int binary_tree_is_heap(const binary_tree_t *tree);
 int btih_helper(const binary_tree_t *tree);
 void recurse_extract(heap_t *tree);
-heap_t *max(heap_t *tree);
 heap_t *last_node_heap(const heap_t *tree, size_t level);
 void heapify(heap_t *tree);
+size_t heap_tree_size(const binary_tree_t *tree);
 #endif /* _BINARY_TREES_H_ */
 
